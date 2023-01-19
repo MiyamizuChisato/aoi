@@ -6,7 +6,7 @@ import { sleep } from '../../../../utils/time.js';
 await sleep(1000);
 </script>
 <template>
-    <div rounded='md' shadow='sm' p='12px' data-aos='animate__fadeIn' flex flex-wrap bg-container>
+    <div rounded='1' p='12px' data-aos='animate__fadeIn' flex flex-wrap bg-container>
         <tag tag='人生之路' />
         <tag tag='无名之辈' />
         <tag tag='致我' />

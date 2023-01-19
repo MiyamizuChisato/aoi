@@ -5,7 +5,7 @@ defineProps({
 
 </script>
 <template>
-    <div data-aos='animate__fadeInDown' p='y-5' flex-between-x>
+    <div data-aos='animate__fadeInDown' data-aos-once='true' p='y-5' flex-between-x>
         <div flex>
             <div w='1' rounded='full' :class='color'></div>
             <div m='x-2' text-strong>

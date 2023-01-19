@@ -6,9 +6,6 @@ const props = defineProps({
     select: Number
 });
 const jumpTrigger = inject('jumpTrigger');
-const navigate = (index) => {
-    jumpTrigger(index);
-};
 const tocRef = ref(null);
 const scope = [props.toc.index, props.toc.children.length + props.toc.index];
 const active = computed(() => {
@@ -27,11 +24,11 @@ const active = computed(() => {
 <template>
     <div class='toc' ref='tocRef' text-disable>
         <div :class='active?"active":""' class='toc-item toc-sup'
-             @click='navigate(toc.index)' :data-index='toc.index'>
+             @click='jumpTrigger(toc.index)' :data-index='toc.index'>
             <div w='16px' class='toc-icon'></div>
             <div p='l-10px' class='toc-text' font='600' line-1>{{ toc.text }}</div>
         </div>
-        <div @click='navigate(subToc.index)' :data-index='subToc.index' class='toc-item toc-sub' :key='index'
+        <div @click='jumpTrigger(subToc.index)' :data-index='subToc.index' class='toc-item toc-sub' :key='index'
              v-for='(subToc,index) in toc.children' :class='subToc.index === select?"active":""'>
             <div w='10px' class='toc-icon'></div>
             <div p='l-18px' class='toc-text'>{{ subToc.text }}</div>

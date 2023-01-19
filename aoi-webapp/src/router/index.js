@@ -1,5 +1,3 @@
-import NProgress from 'nprogress';
-import 'nprogress/nprogress.css';
 import { createRouter, createWebHistory } from 'vue-router';
 import Default from '../layout/Default.vue';
 import Home from '../view/home/Home.vue';
@@ -30,7 +28,7 @@ const routes = [
             {
                 path: '/messages',
                 name: 'messages',
-                component: () => import('../view/messages/Message.vue')
+                component: () => import('../view/messages/Messages.vue')
             },
             {
                 path: '/friends',
@@ -43,24 +41,29 @@ const routes = [
                 component: () => import('../view/blog/Blog.vue')
             }
         ]
+    },
+    {
+        name: 'oauth',
+        path: '/oauth/:type',
+        component: () => import('../view/oauth/Oauth.vue'),
+        children: []
+    },
+    {
+        name: 'admin',
+        path: '/admin',
+        component: () => import('../layout/Admin.vue'),
+        children: []
     }
 ];
 const router = createRouter({
     routes,
     history: createWebHistory(),
     scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
+        if (savedPosition && to.name !== 'blog') {
             return savedPosition;
         } else {
             return { top: 0 };
         }
     }
-});
-router.beforeEach((to, from, next) => {
-    NProgress.start();
-    next();
-});
-router.afterEach((to, from, failure) => {
-    NProgress.done();
 });
 export default router;

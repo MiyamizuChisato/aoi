@@ -4,7 +4,7 @@ import { sleep } from '../../../../utils/time.js';
 await sleep(700);
 </script>
 <template>
-    <div class='carousel' data-aos='animate__fadeIn'>
+    <div class='carousel' h='!lt-md:400px' data-aos='animate__fadeIn'>
         <v-carousel height='100%' :show-arrows='false' :hide-delimiter-background='true' :cycle='true'
                     delimiter-icon='i-material-symbols-cloud' rounded='2' interval='4000'>
             <v-carousel-item>
@@ -25,7 +25,7 @@ await sleep(700);
 <style scoped>
 .carousel {
     height: calc(100vh - 54px - 68px);
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     min-height: 400px;
 }
 

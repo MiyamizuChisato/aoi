@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 <template>
     <main page>
         <router-view v-slot='{ Component }'>

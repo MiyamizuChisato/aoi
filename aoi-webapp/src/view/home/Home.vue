@@ -5,13 +5,11 @@ import Typography from '../../components/Typography.vue';
 <template>
     <div w='xl:1032px' p-x-lt-md margin-center>
         <typography color='primary'>
-            <template #default>
-                <h3>热门推荐</h3>
-            </template>
+            <p text='20px'>热门推荐</p>
         </typography>
         <carousel />
         <typography color='primary'>
-            <h3>看看我的</h3>
+            <p text='20px'>看看我的</p>
         </typography>
         <div bg-container p='6'>
             <p data-aos='animate__fadeInUp'>
@@ -21,19 +19,20 @@ import Typography from '../../components/Typography.vue';
             <p data-aos='animate__fadeInUp'>
                 阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
             <p data-aos='animate__fadeInUp'>
-                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p><p data-aos='animate__fadeInUp'>
-            阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
+                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
             <p data-aos='animate__fadeInUp'>
-                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p><p data-aos='animate__fadeInUp'>
-            阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p><p data-aos='animate__fadeInUp'>
-            阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
-
-
+                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
+            <p data-aos='animate__fadeInUp'>
+                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
+            <p data-aos='animate__fadeInUp'>
+                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
+            <p data-aos='animate__fadeInUp'>
+                阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是阿斯顿糊咖交换机咖时间苦上加苦感觉看哈速度加快公司更何况是</p>
 
 
         </div>
         <typography color='primary'>
-            <h3>看看你的</h3>
+            <p text='20px'>看看你的</p>
         </typography>
         <div data-aos='animate__fadeInUp' bg-container p='10'>
             <span>123</span>

@@ -3,8 +3,11 @@ import { onMounted, ref } from 'vue';
 
 const enable = ref(false);
 onMounted(() => {
+    let top = 0;
     window.addEventListener('scroll', () => {
-        enable.value = document.documentElement.scrollTop > window.innerHeight;
+        const newTop = document.documentElement.scrollTop;
+        enable.value = newTop > window.innerHeight / 2 && newTop < top;
+        top = newTop;
     });
 });
 const returnTopTrigger = () => {
@@ -13,7 +16,6 @@ const returnTopTrigger = () => {
         behavior: 'smooth'
     });
 };
-
 </script>
 <template>
     <transition enter-active-class='animate__animated animate__fadeInUp'

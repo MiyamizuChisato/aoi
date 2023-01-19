@@ -1,0 +1,19 @@
+aoi:
+  secret: ao1sakura
+spring:
+  profiles:
+    active: prod
+  datasource:
+    username: miya
+    password: ao1sakura
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.143.119.158:3306/aoi
+server:
+  servlet:
+    context-path: /aoi
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      logic-delete-field: deleted

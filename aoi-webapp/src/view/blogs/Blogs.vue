@@ -1,5 +1,4 @@
 <script setup>
-
 import Typography from '../../components/Typography.vue';
 import BlogCard from './components/BlogCard.vue';
 import { onMounted, ref } from 'vue';
@@ -17,28 +16,20 @@ onMounted(async () => {
     <v-row p-x-lt-md no-gutters>
         <v-col cols='12' lg='8'>
             <typography color='primary'>
-                <template #default>
-                    <h3>全部文章</h3>
-                </template>
-                <template #suffix>
-                </template>
+                <p text='20px'>全部文章</p>
             </typography>
-            <blog-card :src='src' m='b-5' v-for='i in 6' :key='i' />
+            <blog-card :src='src' m='b-6' v-for='i in 6' :key='i' />
         </v-col>
-        <v-col display='!lt-lg:none' p='!l-12' cols='4'>
+        <v-col display='!lt-xl:none' p='!l-12' cols='4'>
             <div>
                 <typography color='success'>
-                    <template #default>
-                        <h3 text-regular>最近来访</h3>
-                    </template>
+                    <p text='20px'>最近来访</p>
                 </typography>
                 <visitors />
             </div>
             <div position='sticky' top='54px'>
                 <typography color='warning'>
-                    <template #default>
-                        <h3 text-regular>文章标签</h3>
-                    </template>
+                    <p text='20px'>文章标签</p>
                 </typography>
                 <tags />
             </div>

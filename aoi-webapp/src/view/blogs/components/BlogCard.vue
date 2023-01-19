@@ -4,7 +4,7 @@ defineProps({
 });
 </script>
 <template>
-    <div class='blog-card' shadow='sm' rounded='md' flex='md:row col' select='none' bg-container>
+    <div class='blog-card' rounded='md:1 2' flex='md:row col' select='none' bg-container>
         <div class='blog-image'>
             <div class='mask'>
                 <div data-aos='animate__fadeInUp' display='md:none' text='14px' text-light>
@@ -45,7 +45,7 @@ defineProps({
 @media screen  and (min-width: 768px) {
     .blog-image {
         width: 50%;
-        aspect-ratio: 5/3;
+        aspect-ratio: 3/2;
     }
 
     .blog-info {

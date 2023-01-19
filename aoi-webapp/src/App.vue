@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import ReturnTop from './components/ReturnTop.vue';
 
 const tips = ref(false);
 </script>
@@ -13,6 +12,5 @@ const tips = ref(false);
             </v-btn>
         </template>
     </v-snackbar>
-    <return-top />
     <router-view />
 </template>

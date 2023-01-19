@@ -2,7 +2,6 @@
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { go } from '../../utils/router.js';
-
 const router = useRouter();
 const toggle = computed(() => router.currentRoute.value);
 </script>
@@ -32,6 +31,7 @@ const toggle = computed(() => router.currentRoute.value);
 }
 
 :deep(button.v-btn--active) {
+    color: transparent !important;
     background-color: var(--c-selected) !important;
 }
 </style>
